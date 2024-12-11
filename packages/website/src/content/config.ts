@@ -6,6 +6,7 @@ export const collections = {
     schema: docsSchema({
       extend: z.object({
         tags: z.array(z.string()).optional(),
+        title: z.string().optional(),
       }),
     }),
   }),

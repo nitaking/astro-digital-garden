@@ -100,6 +100,12 @@ importers:
       '@braindb/core':
         specifier: 0.0.15
         version: 0.0.15
+      '@hpcc-js/wasm':
+        specifier: ^2.22.4
+        version: 2.22.4
+      '@hpcc-js/wasm-graphviz-cli':
+        specifier: ^1.2.6
+        version: 1.2.6
       '@iconify/json':
         specifier: ^2.2.279
         version: 2.2.279
@@ -657,8 +663,15 @@ packages:
     resolution: {integrity: sha512-ALIk/MOh5gYe1TG/ieS5mVUsk7VUIJTJKPMK9rFFqOgfp0Q3d5QiBXbcOMwUvs37fyZVCz46YjOE6IFeOAXCHA==}
     engines: {node: '>=6'}
 
-  '@hpcc-js/wasm@2.22.3':
-    resolution: {integrity: sha512-CjJbxT9vqpZ2W8iUOd69k1bnkVfVyJqdcXmNZKH9W706Z/GFLwLxGWL6zqJE9KmLtoZVbC85SvdATA0UiGV0fA==}
+  '@hpcc-js/wasm-graphviz-cli@1.2.6':
+    resolution: {integrity: sha512-hgSDcxiOttuuxHXvea5T+mEZ65gX2ASpAuYgXSOXgZ3UzyaqGfFUTygvw7+FUxmdXPOeMXKeiu4XODjtxkht6w==}
+    hasBin: true
+
+  '@hpcc-js/wasm-graphviz@1.7.0':
+    resolution: {integrity: sha512-/1XEmubfDz1UolKiVh6H4BrGX0DZwR39Y2h76LdqR17FZ3gCJoUs4jV7kUywedXerbwx1szhU3dBsNcvkEmjiQ==}
+
+  '@hpcc-js/wasm@2.22.4':
+    resolution: {integrity: sha512-58JkRkxZffiBAbZhc7z+9iaaAOmn1cyxLL3rRwsUvco/I0Wwb7uVAlHM9HiU6XASe2k11jrIjCFff1t9QKjlqg==}
     hasBin: true
 
   '@iconify/json@2.2.279':
@@ -5033,7 +5046,7 @@ snapshots:
     dependencies:
       '@beoe/rehype-code-hook': 0.1.0
       '@beoe/rehype-code-hook-img': 0.3.0
-      '@hpcc-js/wasm': 2.22.3
+      '@hpcc-js/wasm': 2.22.4
 
   '@beoe/rehype-mermaid@0.3.0(playwright@1.49.0)':
     dependencies:
@@ -5393,7 +5406,14 @@ snapshots:
 
   '@fortawesome/fontawesome-free@6.7.1': {}
 
-  '@hpcc-js/wasm@2.22.3':
+  '@hpcc-js/wasm-graphviz-cli@1.2.6':
+    dependencies:
+      '@hpcc-js/wasm-graphviz': 1.7.0
+      yargs: 17.7.2
+
+  '@hpcc-js/wasm-graphviz@1.7.0': {}
+
+  '@hpcc-js/wasm@2.22.4':
     dependencies:
       yargs: 17.7.2
 

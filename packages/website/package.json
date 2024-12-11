@@ -8,7 +8,7 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "postinstall": "playwright install chromium"
+    "postinstall": ""
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
@@ -19,6 +19,8 @@
     "@beoe/rehype-graphviz": "^0.3.0",
     "@beoe/rehype-mermaid": "^0.3.0",
     "@braindb/core": "0.0.15",
+    "@hpcc-js/wasm": "^2.22.4",
+    "@hpcc-js/wasm-graphviz-cli": "^1.2.6",
     "@iconify/json": "^2.2.279",
     "@pagefind/default-ui": "^1.2.0",
     "astro": "^4",

@@ -44,6 +44,13 @@ export default defineConfig({
             directory: "recipes",
           },
         },
+        {
+          label: "Knowledge",
+          // collapsed: true,
+          autogenerate: {
+            directory: "knowledge",
+          },
+        },
       ],
       customCss: ["./src/styles/custom.css"],
       components: {
